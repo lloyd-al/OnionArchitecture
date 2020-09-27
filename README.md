@@ -21,27 +21,33 @@ Following packages need to be installed in each project
 >Install-Package NLog
 
 #
-**Features/Catalog.API**
-
-Swashbuckle.AspNetCore
-
-Swashbuckle.AspNetCore.Swagger
-
-NLog.Config
-
-Microsoft.AspNetCore.Mvc.Versioning
-
-#
 **Features/Catalog.Core**
+
+>Install-Package MongoDB.Driver
+>
+>Install-Package MongoDB.Bson
 
 
 #
 **Features/Catalog.Infrastructure**
 
-Microsoft.EntityFrameworkCore
+>Install-Package Microsoft.EntityFrameworkCore
+
+>Install-Package MongoDB.Driver
+
 
 #
 **Features/Catalog.Application**
 
-AutoMapper.Extensions.Microsoft.DependencyInjection
+>Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection
+
+
+#
+**Features/Catalog.API**
+
+>Install-Package Swashbuckle.AspNetCore
+
+>Install-Package NLog.Config
+
+>Install-Package Microsoft.AspNetCore.Mvc.Versioning
 
