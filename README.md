@@ -1,31 +1,47 @@
 # OnionArchitecture
 Clean Code Template
 
-Following packages need to be installedi in each project
+Following packages need to be installed in each project
 
-# Common.Core
-NLog.Extensions.Logging
+#
 
-# Common.Infrastructure
-MailKit
-MimeKit
+**Common.Core**
 
+>Install-Package Microsoft.AspNetCore.Http.Features
 
-# Features/Catalog.API
+>Install-Package Newtonsoft.Json
+
+#
+**Common.Infrastructure**
+
+>Install-Package Microsoft.EntityFrameworkCore
+
+>Install-Package MailKit
+
+>Install-Package NLog
+
+#
+**Features/Catalog.API**
+
 Swashbuckle.AspNetCore
+
 Swashbuckle.AspNetCore.Swagger
+
 NLog.Config
+
 Microsoft.AspNetCore.Mvc.Versioning
 
+#
+**Features/Catalog.Core**
 
-# Features/Catalog.Core
 
+#
+**Features/Catalog.Infrastructure**
 
-
-# Features/Catalog.Infrasctruture
 Microsoft.EntityFrameworkCore
 
+#
+**Features/Catalog.Application**
 
-# Features/Catalog.Application
 AutoMapper.Extensions.Microsoft.DependencyInjection
 
