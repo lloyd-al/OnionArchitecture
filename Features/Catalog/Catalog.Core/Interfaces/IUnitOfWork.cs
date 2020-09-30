@@ -3,11 +3,11 @@
 
 namespace OnionArchitecture.Catalog.Core.Interfaces
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         IProductRepository Products { get; }
 
-        int Complete();
+        void Complete();
 
     }
 }

@@ -18,14 +18,9 @@ namespace OnionArchitecture.Catalog.Infrastructure.UnitOfWork
             _context = context;
             Products = new ProductRepository(_context);
         }
-        public int Complete()
+        public void Complete()
         {
-            return _context.SaveChanges();
         }
 
-        public void Dispose()
-        {
-            _context.Dispose();
-        }
     }
 }
